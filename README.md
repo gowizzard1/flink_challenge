@@ -45,3 +45,13 @@ DELETE /location/xyz987
 
 200 OK
 ```
+
+## How to build and run
+- Add to environment variables `LOCATION_HISTORY_TTL_SECONDS` and `HISTORY_SERVER_LISTEN_ADDR` with values of the ttl and port number respectively.
+- Run `go build` from the root of the project to generate an executable file
+- Run the executable file 
+- Test all cases using Postman i.e
+    - Get without any orders
+    - Post to add location history
+    - Get added location history with and without `max` query
+    - Delete location and test getting
